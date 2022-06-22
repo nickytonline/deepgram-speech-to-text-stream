@@ -12,5 +12,6 @@ Bekah Hawrot Weigel joins Nick to show how you can transcribe text using Deepgra
 DEEPGRAM_API_KEY="YOUR_API_KEY"
 ```
 
-2. Run `npm install` 2. Run `node src/server/server.js
-3. Navigate to http://localhost:3000.
+2. Run `npm install`
+3. Run `node src/server/server.js
+4. Navigate to http://localhost:3000.
