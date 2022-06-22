@@ -1,5 +1,5 @@
 const generateButton = document.getElementById("generateTranscript");
-const transcriptionArea = document.getElementById("transcript");
+const transcriptionArea = document.querySelector(".transcript");
 const urlToTranscribe = document.getElementById("urlToTranscribe");
 
 generateButton.addEventListener("click", async (event) => {
