@@ -1,11 +1,12 @@
-const generateButton = document.getElementById('generateTranscript');
-const transcriptionArea = document.getElementById('transcript');
+const generateButton = document.getElementById("generateTranscript");
+const transcriptionArea = document.getElementById("transcript");
+const urlToTranscribe = document.getElementById("urlToTranscribe");
 
-generateButton.addEventListener('click', async event => {
+generateButton.addEventListener("click", async (event) => {
   event.preventDefault();
-
-  const response = await fetch('/get-transcript');
+  const file = encodeURIComponent(urlToTranscribe.value);
+  const response = await fetch(`/get-transcript?file=${file}`);
   const { transcription } = await response.json();
 
   transcriptionArea.innerText = transcription;
-})
+});
